@@ -14,6 +14,8 @@ const cheese = document.querySelector("main div.food.cheese");
 const lettuce = document.querySelector("main div.food.lettuce");
 const tomato = document.querySelector("main div.food.tomato");
 const pickles = document.querySelector("main div.food.pickles");
+const topBun = document.querySelector("main div.food.top-bun");
+const bottomBun = document.querySelector("#bottomBun");
 
 var orderName = document.getElementById('output');
 
@@ -123,6 +125,15 @@ function buildBurger() {
           orderName.innerHTML += '<B>Pickles</B><br>';
 
           break;
+          case "single":
+              TweenMax.to(bottomBun, 4, {
+                y: -340
+              })
+              TweenMax.to(topBun, 4, {
+                y: 200
+              })
+    
+              break;
     default:
       break;
   }

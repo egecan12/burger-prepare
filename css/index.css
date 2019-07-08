@@ -20,16 +20,26 @@ body * {
   height: 50px;
 }
 
+#bottomBun{
+position: relative;
+top: 600px;
+right: 150px;
+}
+
 .top-bun {
   background: url("../img/splash.png") -7px -20px;
 }
 
 .bottom-bun {
-  background: url("../img/splash.png") -423px -270px;
+  background: url("../img/splash.png") -430px -270px;
+  position: absolute;
+  z-index: -1;
+
 }
 
 .beef {
   background: url("../img/splash.png") -7px -137px;
+  
 }
 
 .chicken {
