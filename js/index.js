@@ -48,6 +48,8 @@ function greeting() {
   );
   // Actually speak the text
   synth.speak(utterThis);
+
+  location.reload();
 }
 
 btnBegin.addEventListener("click", greeting);
@@ -64,49 +66,49 @@ function buildBurger() {
   switch (this.dataset.choice) {
     case "cheese":
       TweenMax.to(cheese, 4, {
-        y: 200
+        y: 210
       })
       orderName.innerHTML += '<B>Cheese</B><br>';
 
       break;
     case "beef":
       TweenMax.to(beef, 4, {
-        y: 200
+        y: 220
       })
       orderName.innerHTML += '<B>Beef</B><br>';
 
       break;
     case "chicken":
       TweenMax.to(chicken, 4, {
-        y: 200
+        y: 210
       })
       orderName.innerHTML += '<B>Chicken</B><br>';
 
       break;
     case "vegetarian":
       TweenMax.to(vegetarian, 4, {
-        y: 200
+        y: 210
       })
       orderName.innerHTML += '<B>Vegetarian</B><br>';
 
       break
     case "ketchup":
       TweenMax.to(ketchup, 4, {
-        y: 200
+        y: 210
       })
       orderName.innerHTML += '<B>Ketchup</B><br>';
 
       break;
     case "mustard":
       TweenMax.to(mustard, 4, {
-        y: 200
+        y: 212
       })
       orderName.innerHTML += '<B>Mustard</B><br>';
 
       break;
     case "tomato":
       TweenMax.to(tomato, 4, {
-        y: 200
+        y: 208
       })
       orderName.innerHTML += '<B>Tomato</B><br>';
 
@@ -120,7 +122,7 @@ function buildBurger() {
       break;
       case "pickles":
           TweenMax.to(pickles, 4, {
-            y: 200
+            y: 203
           })
           orderName.innerHTML += '<B>Pickles</B><br>';
 
