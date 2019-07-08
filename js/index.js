@@ -64,63 +64,63 @@ function buildBurger() {
       TweenMax.to(cheese, 4, {
         y: 200
       })
-      orderName.innerHTML += 'cheese';
+      orderName.innerHTML += '<B>Cheese</B><br>';
 
       break;
     case "beef":
       TweenMax.to(beef, 4, {
         y: 200
       })
-      orderName.innerHTML += 'beef';
+      orderName.innerHTML += '<B>Beef</B><br>';
 
       break;
     case "chicken":
       TweenMax.to(chicken, 4, {
         y: 200
       })
-      orderName.innerHTML = 'chicken';
+      orderName.innerHTML += '<B>Chicken</B><br>';
 
       break;
     case "vegetarian":
       TweenMax.to(vegetarian, 4, {
         y: 200
       })
-      orderName.innerHTML = 'vegetarian';
+      orderName.innerHTML += '<B>Vegetarian</B><br>';
 
       break
     case "ketchup":
       TweenMax.to(ketchup, 4, {
         y: 200
       })
-      orderName.innerHTML = 'ketchup';
+      orderName.innerHTML += '<B>Ketchup</B><br>';
 
       break;
     case "mustard":
       TweenMax.to(mustard, 4, {
         y: 200
       })
-      orderName.innerHTML = 'mustard';
+      orderName.innerHTML += '<B>Mustard</B><br>';
 
       break;
     case "tomato":
       TweenMax.to(tomato, 4, {
         y: 200
       })
-      orderName.innerHTML = 'tomato';
+      orderName.innerHTML += '<B>Tomato</B><br>';
 
       break;
     case "lettuce":
       TweenMax.to(lettuce, 4, {
         y: 200
       })
-      orderName.innerHTML = 'lettuce';
+      orderName.innerHTML += '<B>Lettuce</B><br>';
 
       break;
       case "pickles":
           TweenMax.to(pickles, 4, {
             y: 200
           })
-          orderName.innerHTML = 'pickles';
+          orderName.innerHTML += '<B>Pickles</B><br>';
 
           break;
     default:
