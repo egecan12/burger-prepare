@@ -15,6 +15,9 @@ const lettuce = document.querySelector("main div.food.lettuce");
 const tomato = document.querySelector("main div.food.tomato");
 const pickles = document.querySelector("main div.food.pickles");
 
+var orderName = document.getElementById('output');
+
+
 
 
 
@@ -23,15 +26,16 @@ const pickles = document.querySelector("main div.food.pickles");
 const ingredients = [];
 
 const foodButtons = document.querySelectorAll("aside button")
-foodButtons.forEach(btn => {btn.addEventListener('click',buildBurger)
-  
+foodButtons.forEach(btn => {
+  btn.addEventListener('click', buildBurger)
+
 });
 
 
 /* Constructor Function
 -------------------------------------------------- */
 function Ingredient(name) {
-    this.name= name ;
+  this.name = name;
 }
 
 function greeting() {
@@ -49,15 +53,79 @@ btnBegin.addEventListener("click", greeting);
 // this function will store the ingredient pressed into the array ingredients
 function buildBurger() {
 
-ingredients.push(new Ingredient(this.dataset.choice));//tiklanan nesnenin getirdigi attirubute yeni bir nesne olarak olusturulup ingredients a gonderiliyor
+  ingredients.push(new Ingredient(this.dataset.choice)); //tiklanan nesnenin getirdigi attirubute yeni bir nesne olarak olusturulup ingredients a gonderiliyor
 
-TweenMax.to(cheese, 4, {x:200})
-
-
+  console.log(this)
 
 
 
+  switch (this.dataset.choice) {
+    case "cheese":
+      TweenMax.to(cheese, 4, {
+        y: 200
+      })
+      orderName.innerHTML += 'cheese';
 
+      break;
+    case "beef":
+      TweenMax.to(beef, 4, {
+        y: 200
+      })
+      orderName.innerHTML += 'beef';
+
+      break;
+    case "chicken":
+      TweenMax.to(chicken, 4, {
+        y: 200
+      })
+      orderName.innerHTML = 'chicken';
+
+      break;
+    case "vegetarian":
+      TweenMax.to(vegetarian, 4, {
+        y: 200
+      })
+      orderName.innerHTML = 'vegetarian';
+
+      break
+    case "ketchup":
+      TweenMax.to(ketchup, 4, {
+        y: 200
+      })
+      orderName.innerHTML = 'ketchup';
+
+      break;
+    case "mustard":
+      TweenMax.to(mustard, 4, {
+        y: 200
+      })
+      orderName.innerHTML = 'mustard';
+
+      break;
+    case "tomato":
+      TweenMax.to(tomato, 4, {
+        y: 200
+      })
+      orderName.innerHTML = 'tomato';
+
+      break;
+    case "lettuce":
+      TweenMax.to(lettuce, 4, {
+        y: 200
+      })
+      orderName.innerHTML = 'lettuce';
+
+      break;
+      case "pickles":
+          TweenMax.to(pickles, 4, {
+            y: 200
+          })
+          orderName.innerHTML = 'pickles';
+
+          break;
+    default:
+      break;
+  }
 
 
 }
@@ -66,5 +134,3 @@ TweenMax.to(cheese, 4, {x:200})
 function showBurger() {
   console.log(ingredients)
 }
-
-
