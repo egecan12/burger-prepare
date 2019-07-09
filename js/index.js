@@ -129,7 +129,7 @@ function buildBurger() {
           break;
           case "single":
               TweenMax.to(bottomBun, 4, {
-                y: -340
+                y: -315
               })
               TweenMax.to(topBun, 4, {
                 y: 200
