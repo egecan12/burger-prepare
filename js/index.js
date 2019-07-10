@@ -80,14 +80,14 @@ function buildBurger() {
       break;
     case "chicken":
       TweenMax.to(chicken, 4, {
-        y: 210
+        y: 220
       })
       orderName.innerHTML += '<B>Chicken</B><br>';
 
       break;
     case "vegetarian":
       TweenMax.to(vegetarian, 4, {
-        y: 210
+        y: 220
       })
       orderName.innerHTML += '<B>Vegetarian</B><br>';
 
